@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.screen {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    opacity: 1;
+    border-left: 3px solid teal;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://livewallpaperhd.com/wp-content/uploads/2021/01/Best-Dark-Aesthetic-Wallpaper-HD-1536x864.jpg') no-repeat center center/cover;
+    z-index: 100;
+}
+
+.screen .desc {
+    height: 400px;
+    width: 75%;
+    margin: auto;
+    padding: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-left: 6px solid teal;
+    border-radius: 8px;
+    background: linear-gradient( hsl(240deg 100% 7% / 88%), black);
+}
+
+.inside-footer {
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: footer-anim 3000ms ease-in-out infinite forwards;
+}
+
+@keyframes footer-anim {
+    0% {
+        opacity: 1;
+        color: teal;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        color: teal;
+    }
+}
+
+.inside-footer span {
+    color: white;
+}
+
+.hr {
+    width: 0%;
+    animation: hr-anim 2000ms cubic-bezier(0.645, 0.045, 0.355, 1) infinite forwards;
+}
+
+@keyframes hr-anim {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+.screen-collapse-anim {
+    animation: screen-collapse-anim 2000ms ease-in-out 1 forwards;
+}
+
+@keyframes screen-collapse-anim {
+    from {
+        display: flex;
+        opacity: 1;
+        z-index: 100;
+        width: 100vw;
+    }
+    to {
+        display: none;
+        opacity: 0;
+        width: 0vw;
+    }
+}
+
+.screen .btn {
+    height: 60px;
+    width: 190px;
+    background: linear-gradient( hsl(240deg 100% 7% / 88%), black);
+    outline: none;
+    border: none;
+    border-left: 6px solid teal;
+    color: white;
+    opacity: 1;
+    margin-top: -30px;
+    margin-bottom: 32px;
+    cursor: pointer;
+    z-index: 200;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 7px;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    z-index: 5;
+}
+
+.digital-date {
+    height: 40px;
+    width: 120px;
+    background-color: teal;
+    z-index: 20;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.container .clock {
+    height: 400px;
+    width: 400px;
+    border: 10px solid teal;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.container .clock .middle-dot {
+    position: relative;
+    top: 180px;
+    left: -16;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: teal;
+    margin: auto;
+    z-index: 10;
+}
+
+.container .clock .clock-hand {
+    position: absolute;
+    width: 140px;
+    height: 2px;
+    margin-left: 115px;
+    top: 183px;
+    left: -70px;
+    background-color: white;
+    transform-origin: 100%;
+}
+
+.container .clock .hour-hand {
+    transform: rotate(90deg);
+    transition: all 1s;
+    transition-timing-function: cubic-bezier(0, 1.48, 0.77, -0.14);
+    width: 60px;
+    margin-left: 200px;
+}
+
+.container .clock .minute-hand {
+    transform: rotate(90deg);
+    transition: all 1s;
+    transition-timing-function: cubic-bezier(0, 1.48, 0.77, -0.14);
+    width: 115px;
+    margin-left: 145.45px;
+}
+
+.container .clock .second-hand {
+    transform: rotate(90deg);
+    transition: all 1s;
+    transition-timing-function: cubic-bezier(0, 1.48, 0.77, -0.14);
+    width: 150px;
+    left: -75px;
+}

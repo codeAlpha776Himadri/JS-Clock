@@ -16,7 +16,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('https://livewallpaperhd.com/wp-content/uploads/2021/01/Best-Dark-Aesthetic-Wallpaper-HD-1536x864.jpg') no-repeat center center/cover;
+    background-color: black;
+    background: url('https://images.unsplash.com/photo-1506220926022-cc5c12acdb35?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
     z-index: 100;
 }
 
